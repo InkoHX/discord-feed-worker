@@ -1,0 +1,6 @@
+name = "discord-feed-worker"
+main = "src/index.ts"
+compatibility_date = "2022-12-23"
+
+[triggers]
+crons = [ "0 */3 * * *" ]
