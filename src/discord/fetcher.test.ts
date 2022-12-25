@@ -16,7 +16,7 @@ test('fetcher', () => {
   const url = 'https://example.com'
   const body = 'foo'
 
-  fetch('https://example.com', {
+  void fetch('https://example.com', {
     body,
     headers: { Authorization: 'Inject!', 'X-M2U': '紅蓮の唄' },
   })

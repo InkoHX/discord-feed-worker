@@ -37,7 +37,7 @@ export default {
         {
           body: JSON.stringify({
             content: [
-              `**${title}**が<t:${Math.floor(
+              `**${title ?? 'No title'}**が<t:${Math.floor(
                 new Date(published!).getTime() / 1_000
               )}>に更新されました。`,
               '',
