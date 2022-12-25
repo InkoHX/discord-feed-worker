@@ -50,7 +50,7 @@ pnpm run dev
 
 ## FAQ
 
-### Is it possible to do something other than every 3 hours?
+### Can I change from every 3 hours to every n hours?
 
 Yes, as an example, to change every hour, rewrite `triggers.crons` in `wrangler.toml` as `0 * * * *` and replace `10_800_000` set in the date constant in `src/index.ts` with `3_600_000`.
 
