@@ -59,7 +59,7 @@ Yes, as an example, to change every hour, rewrite `triggers.crons` in `wrangler.
 
 ### What permissions must I give my Discord bot?
 
-Read `Messages/View Channels` and `Send Messages` are required, but additional permissions are needed depending on the options you enable (e.g., `CROSSPOST`).
+`Read Messages/View Channels` and `Send Messages` are required, but additional permissions are needed depending on the options you enable (e.g., `CROSSPOST`).
 
 | Options       | Require permissions    |
 | ------------- | ---------------------- |
