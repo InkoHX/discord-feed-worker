@@ -6,7 +6,8 @@
     "dev": "wrangler dev --test-scheduled --env ./local.env",
     "deploy": "wrangler publish",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@extractus/feed-extractor": "^6.1.7"
