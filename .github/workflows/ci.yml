@@ -24,6 +24,9 @@ jobs:
       - name: Check code style
         run: pnpm run format:check
 
+      - name: Run linter
+        run: pnpm run lint
+
       - name: Type check
         run: pnpm run typecheck
 
