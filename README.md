@@ -1,5 +1,8 @@
 # discord-feed-worker
 
+[![CI](https://github.com/InkoHX/discord-feed-worker/actions/workflows/ci.yml/badge.svg)](https://github.com/InkoHX/discord-feed-worker/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/InkoHX/discord-feed-worker/branch/main/graph/badge.svg?token=PH7GI3DLM2)](https://codecov.io/gh/InkoHX/discord-feed-worker)
+
 Send feed content to Discord using Cloudflare Workers.
 
 ## Supports
