@@ -45,7 +45,7 @@ pnpm run deploy
 pnpm i --frozen-lockfile
 
 # Create local.env
-cp ./local.env.example ./local.env
+cp ./.dev.vars.example ./.dev.vars
 
 # Launch dev server
 pnpm run dev
