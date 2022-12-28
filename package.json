@@ -3,7 +3,7 @@
   "scripts": {
     "format": "prettier -w .",
     "format:check": "prettier -c .",
-    "dev": "wrangler dev --test-scheduled --env ./local.env",
+    "dev": "wrangler dev --test-scheduled",
     "deploy": "wrangler publish",
     "test": "vitest",
     "coverage": "vitest run --coverage",
