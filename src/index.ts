@@ -14,7 +14,7 @@ export default {
   async scheduled(
     controller: ScheduledController,
     { CHANNEL_ID, DISCORD_TOKEN, CROSSPOST, CREATE_THREAD, FEED_URL }: Env,
-    _context: Pick<ExecutionContext, 'waitUntil'>
+    _context: Pick<ExecutionContext, 'waitUntil'>,
   ): Promise<void> {
     if (!CHANNEL_ID)
       throw new Error('The "CHANNEL_ID" is not in the environment variable.')
@@ -38,7 +38,7 @@ export default {
           body: JSON.stringify({
             content: [
               `**${title ?? 'No title'}**が<t:${Math.floor(
-                new Date(published!).getTime() / 1_000
+                new Date(published!).getTime() / 1_000,
               )}>に更新されました。`,
               '',
               link,
@@ -51,7 +51,7 @@ export default {
           headers: {
             'Content-Type': 'application/json',
           },
-        }
+        },
       )
 
       if (!response.ok) {
@@ -62,7 +62,7 @@ export default {
             'Causes may include the following:',
             '1. Missing "Read Messages/View Channels" and "Send Messages" permissions',
             '2. Specified channel does not exist',
-          ].join('\n')
+          ].join('\n'),
         )
         console.error('HTTP Code:', response.status)
         console.error('Response body:', await response.json())
@@ -77,7 +77,7 @@ export default {
           discord.routes.corsspost(CHANNEL_ID, id).toString(),
           {
             method: 'POST',
-          }
+          },
         )
 
         if (!response.ok) {
@@ -88,7 +88,7 @@ export default {
               'Causes may include the following:',
               '1. Missing "Manage Messages" permission',
               '2. Channel is not Announcement Channel',
-            ].join('\n')
+            ].join('\n'),
           )
           console.error('HTTP Code:', response.status)
           console.error('Response body:', await response.json())
@@ -104,7 +104,7 @@ export default {
             headers: {
               'Content-Type': 'application/json',
             },
-          }
+          },
         )
 
         if (!response.ok) {
@@ -114,7 +114,7 @@ export default {
               '',
               'Causes may include the following:',
               '1. Missing "Create Public Threads" permission',
-            ].join('\n')
+            ].join('\n'),
           )
           console.error('HTTP Code:', response.status)
           console.error('Response body:', await response.json())

@@ -12,23 +12,23 @@ describe('routes', () => {
 
   it('Correct message route', () => {
     expect(routes.message('351992405831974915').toString()).toBe(
-      `https://discord.com/api/v${API_VERSION}/channels/351992405831974915/messages`
+      `https://discord.com/api/v${API_VERSION}/channels/351992405831974915/messages`,
     )
   })
 
   it('Correct crosspost route', () => {
     expect(
-      routes.corsspost('351992405831974915', '391390986770710528').toString()
+      routes.corsspost('351992405831974915', '391390986770710528').toString(),
     ).toBe(
-      `https://discord.com/api/v${API_VERSION}/channels/351992405831974915/messages/391390986770710528/crosspost`
+      `https://discord.com/api/v${API_VERSION}/channels/351992405831974915/messages/391390986770710528/crosspost`,
     )
   })
 
   it('Correct thread route', () => {
     expect(
-      routes.thread('351992405831974915', '391390986770710528').toString()
+      routes.thread('351992405831974915', '391390986770710528').toString(),
     ).toBe(
-      `https://discord.com/api/v${API_VERSION}/channels/351992405831974915/messages/391390986770710528/threads`
+      `https://discord.com/api/v${API_VERSION}/channels/351992405831974915/messages/391390986770710528/threads`,
     )
   })
 })

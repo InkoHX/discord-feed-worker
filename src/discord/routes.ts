@@ -9,6 +9,6 @@ export const routes = {
   corsspost: (channelId: string, messageId: string) =>
     new URL(
       `channels/${channelId}/messages/${messageId}/crosspost`,
-      routes.base
+      routes.base,
     ),
 } as const
