@@ -14,6 +14,7 @@ export default {
   async scheduled(
     controller: ScheduledController,
     { CHANNEL_ID, DISCORD_TOKEN, CROSSPOST, CREATE_THREAD, FEED_URL }: Env,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     _context: Pick<ExecutionContext, 'waitUntil'>,
   ): Promise<void> {
     if (!CHANNEL_ID)
