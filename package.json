@@ -3,8 +3,8 @@
   "scripts": {
     "format": "prettier -w .",
     "format:check": "prettier -c .",
-    "dev": "wrangler dev --test-scheduled",
-    "deploy": "wrangler publish",
+    "dev": "wrangler dev --local --test-scheduled",
+    "deploy": "wrangler deploy",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "typecheck": "tsc",
