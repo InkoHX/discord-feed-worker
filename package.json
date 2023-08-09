@@ -12,7 +12,7 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
-    "@extractus/feed-extractor": "^6.1.7"
+    "@extractus/feed-extractor": "^7.0.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20221111.1",
@@ -28,7 +28,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@extractus/feed-extractor@6.1.7": "patches/@extractus__feed-extractor@6.1.7.patch"
+      "@extractus/feed-extractor@7.0.1": "patches/@extractus__feed-extractor@7.0.1.patch"
     }
   }
 }

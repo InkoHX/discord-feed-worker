@@ -1,8 +1,8 @@
 diff --git a/index.d.ts b/index.d.ts
-index 9ab61cdc3fbd9e8bdcded9aa8bbcf66e1818f155..c2b6821fec39c47bc96ad9219caac2ba44cd3bde 100755
+index ffdd4f87784f3b8bf18b9fa9de7a7457064fe65d..67df0ef7e6def3be4bf9ece3b839354fb13822b6 100755
 --- a/index.d.ts
 +++ b/index.d.ts
-@@ -4,7 +4,7 @@ export interface FeedEntry {
+@@ -8,7 +8,7 @@ export interface FeedEntry {
    link?: string;
    title?: string;
    description?: string;
