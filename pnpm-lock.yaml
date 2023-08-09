@@ -4,15 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@extractus/feed-extractor@6.1.7':
-    hash: ythxflpdlig7jza7o27sdtbvvy
-    path: patches/@extractus__feed-extractor@6.1.7.patch
-
 dependencies:
   '@extractus/feed-extractor':
-    specifier: ^6.1.7
-    version: 6.1.7(patch_hash=ythxflpdlig7jza7o27sdtbvvy)
+    specifier: ^7.0.1
+    version: 7.0.1
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -318,18 +313,17 @@ packages:
       - supports-color
     dev: true
 
-  /@extractus/feed-extractor@6.1.7(patch_hash=ythxflpdlig7jza7o27sdtbvvy):
-    resolution: {integrity: sha512-wbgr+gTY+xvh88/mgKnTUdevMsqFVokLd2JOxenbiTiMF0ADzsf7YAzyXQyWHFLQ3Cj+DFrpNrQU5Udy/3ZEFw==}
-    engines: {node: '>= 14'}
+  /@extractus/feed-extractor@7.0.1:
+    resolution: {integrity: sha512-C0PTQOH7/Qcipp1Tov19jRPwMw+fLuxIHSfQqSs/Nl7rdsX98YIvOs/unJYq7LqfUGpN2CHKwKkcnhOOai8bCw==}
+    engines: {node: '>= 15'}
     dependencies:
-      bellajs: 11.1.1
-      cross-fetch: 3.1.5
-      fast-xml-parser: 4.0.12
-      html-entities: 2.3.3
+      bellajs: 11.1.2
+      cross-fetch: 4.0.0
+      fast-xml-parser: 4.2.7
+      html-entities: 2.4.0
     transitivePeerDependencies:
       - encoding
     dev: false
-    patched: true
 
   /@humanwhocodes/config-array@0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
@@ -872,8 +866,8 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
 
-  /bellajs@11.1.1:
-    resolution: {integrity: sha512-Fjsx2ZVarl3UWeTq3YJbbPoQPyh4dWtduw+DMnDYhKya9agbEg/8eXP7yHOvv88zUEHoVl9O/XmgrNTMcMTVSQ==}
+  /bellajs@11.1.2:
+    resolution: {integrity: sha512-2Fy3Km5JKyIy/KunW3oica2gZtkjD2qSqti2Q3xPhHvXXdMbc+32pEMOPG+xrSat0BXVhRjHIx++lzxIPK0GqQ==}
     engines: {node: '>= 14'}
     dev: false
 
@@ -1040,10 +1034,10 @@ packages:
     resolution: {integrity: sha512-izfGgKyzzIyLaeb1EtZ3KbglkS6AKp9cv7LxmiyoOu+fXfol1tQDC0Cof0enVZGNtudTHW+3lfuW9ZkLQss4Wg==}
     dev: true
 
-  /cross-fetch@3.1.5:
-    resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
+  /cross-fetch@4.0.0:
+    resolution: {integrity: sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==}
     dependencies:
-      node-fetch: 2.6.7
+      node-fetch: 2.6.12
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -1527,8 +1521,8 @@ packages:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: true
 
-  /fast-xml-parser@4.0.12:
-    resolution: {integrity: sha512-/Nmo3823Rfx7UTJosQNz6hBVbszfv1Unb7A4iNJZhvCGCgtIHv/uODmrYIH8vc05+XKZ4hNIOv6SlBejvJgATw==}
+  /fast-xml-parser@4.2.7:
+    resolution: {integrity: sha512-J8r6BriSLO1uj2miOk1NW0YVm8AGOOu3Si2HQp/cSmo6EA4m3fcwu2WKjJ4RK9wMLBtg69y1kS8baDiQBR41Ig==}
     hasBin: true
     dependencies:
       strnum: 1.0.5
@@ -1676,8 +1670,8 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /html-entities@2.3.3:
-    resolution: {integrity: sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==}
+  /html-entities@2.4.0:
+    resolution: {integrity: sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ==}
     dev: false
 
   /html-escaper@2.0.2:
@@ -2006,8 +2000,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /node-fetch@2.6.7:
-    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+  /node-fetch@2.6.12:
+    resolution: {integrity: sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
       encoding: ^0.1.0
