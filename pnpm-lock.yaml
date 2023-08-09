@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@extractus/feed-extractor@7.0.1':
+    hash: 5ks2gyazbdfn6zdjvzy6uea7gy
+    path: patches/@extractus__feed-extractor@7.0.1.patch
+
 dependencies:
   '@extractus/feed-extractor':
     specifier: ^7.0.1
-    version: 7.0.1
+    version: 7.0.1(patch_hash=5ks2gyazbdfn6zdjvzy6uea7gy)
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -313,7 +318,7 @@ packages:
       - supports-color
     dev: true
 
-  /@extractus/feed-extractor@7.0.1:
+  /@extractus/feed-extractor@7.0.1(patch_hash=5ks2gyazbdfn6zdjvzy6uea7gy):
     resolution: {integrity: sha512-C0PTQOH7/Qcipp1Tov19jRPwMw+fLuxIHSfQqSs/Nl7rdsX98YIvOs/unJYq7LqfUGpN2CHKwKkcnhOOai8bCw==}
     engines: {node: '>= 15'}
     dependencies:
@@ -324,6 +329,7 @@ packages:
     transitivePeerDependencies:
       - encoding
     dev: false
+    patched: true
 
   /@humanwhocodes/config-array@0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}

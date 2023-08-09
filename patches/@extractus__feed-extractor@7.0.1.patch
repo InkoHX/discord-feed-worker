@@ -1,0 +1,13 @@
+diff --git a/index.d.ts b/index.d.ts
+index ffdd4f87784f3b8bf18b9fa9de7a7457064fe65d..67df0ef7e6def3be4bf9ece3b839354fb13822b6 100755
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -8,7 +8,7 @@ export interface FeedEntry {
+   link?: string;
+   title?: string;
+   description?: string;
+-  published?: Date;
++  published?: Date | string; // The string is not parsed into Date, but is confirmed to contain a string.
+ }
+ 
+ export interface FeedData {
