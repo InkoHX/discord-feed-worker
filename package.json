@@ -1,5 +1,6 @@
 {
   "name": "discord-feed-worker",
+  "type": "module",
   "scripts": {
     "format": "prettier -w .",
     "format:check": "prettier -c .",
