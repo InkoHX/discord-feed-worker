@@ -26,9 +26,11 @@ export default {
 
     const date = new Date(controller.scheduledTime - 10_800_000) // 3 hours ago
     const fetcher = discord.fetcher(DISCORD_TOKEN)
-    const entries = (await extract(FEED_URL)).entries?.filter(({ published }) => {
-      return published && new Date(published) > date
-    })
+    const entries = (await extract(FEED_URL)).entries?.filter(
+      ({ published }) => {
+        return published && new Date(published) > date
+      },
+    )
 
     if (!entries) throw new TypeError('"entries" is undefined.')
 
