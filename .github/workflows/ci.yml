@@ -33,7 +33,7 @@ jobs:
       - name: Generate coverage
         run: pnpm run coverage
 
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
